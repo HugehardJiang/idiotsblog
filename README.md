@@ -1,4 +1,4 @@
-# Idiots Website Project
+# Idiots Blog System
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)](https://www.php.net/)
@@ -87,3 +87,4 @@ http://your-domain.com/install/
 ## 📄 开源协议
 
 MIT License
+
