@@ -9,6 +9,7 @@ define('DB_NAME', 'YOUR_DB_NAME');
 define('SITE_NAME', 'YOUR_SITE_NAME');
 define('SITE_DOMAIN', 'YOUR_SITE_DOMAIN');
 define('SITE_URL', 'YOUR_SITE_URL'); // e.g. https://www.example.com
+define('ENABLE_ABOUT_PAGE', true); // Set to false to disable the about page
 
 // Error reporting (turn off for production)
 ini_set('display_errors', 0);

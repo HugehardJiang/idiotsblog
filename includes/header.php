@@ -48,7 +48,9 @@ if (!isset($pathPrefix)) {
             <nav>
                 <ul>
                     <li><a href="<?php echo SITE_URL; ?>/index.php">首页</a></li>
-                    <li><a href="<?php echo SITE_URL; ?>/about">关于</a></li>
+                    <?php if (!defined('ENABLE_ABOUT_PAGE') || ENABLE_ABOUT_PAGE): ?>
+                        <li><a href="<?php echo SITE_URL; ?>/about">关于</a></li>
+                    <?php endif; ?>
 
                     <?php if (isset($_SESSION['user_id'])): ?>
                         <li class="user-menu-item">

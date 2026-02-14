@@ -1,4 +1,10 @@
 <?php
+require_once 'config.php'; // Ensure config is loaded first to check constant
+if (defined('ENABLE_ABOUT_PAGE') && ENABLE_ABOUT_PAGE === false) {
+    header("Location: index.php");
+    exit;
+}
+
 $pageTitle = '关于我 - idiots';
 require_once 'includes/db.php';
 require_once 'includes/header.php';

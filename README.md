@@ -1,4 +1,4 @@
-# Idiots Blog System
+# Idiots Website Project
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)](https://www.php.net/)
@@ -51,6 +51,15 @@ http://your-domain.com/install/
 
 安装完成后，系统会自动生成 `config.php` 并锁定安装程序。
 
+## ⚙️ 配置选项
+
+在 `config.php` 中，你可以自定义以下选项：
+
+```php
+define('ENABLE_ABOUT_PAGE', true); // 设置为 false 可禁用“关于”页面
+define('SITE_NAME', 'My Awesome Blog'); // 网站名称
+```
+
 ---
 
 ## 手动安装 (可选)
@@ -87,4 +96,3 @@ http://your-domain.com/install/
 ## 📄 开源协议
 
 MIT License
-
