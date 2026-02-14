@@ -1,0 +1,10 @@
+location / {
+    if (!-e $request_filename) {
+        rewrite ^/sitemap.xml$ /sitemap.php last;
+        rewrite ^/article/([0-9]+)$ /article.php?id=$1 last;
+        rewrite ^/category/([^/]+)$ /archive.php?category=$1 last;
+        rewrite ^/tag/([^/]+)$ /archive.php?tag=$1 last;
+        rewrite ^/archive$ /archive.php last;
+        rewrite ^/about$ /about.php last;
+    }
+}

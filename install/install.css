@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #a71e1e;
+    --primary-hover: #8b0000;
+    --text-primary: #2c2c2c;
+    --text-secondary: #555;
+    --bg-color: #f9f9f7;
+    --bg-card: #ffffff;
+    --border-color: #e0e0e0;
+    --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.12);
+    --radius: 8px;
+    --font-serif: "Noto Serif SC", "Songti SC", serif;
+    --font-sans: "PingFang SC", "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.installer-container {
+    background: var(--bg-card);
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+}
+
+.installer-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.installer-header h1 {
+    font-family: var(--font-serif);
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+.installer-header p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(167, 30, 30, 0.1);
+}
+
+.form-section-title {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+    margin: 30px 0 20px 0;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 14px 20px;
+    width: 100%;
+    border-radius: var(--radius);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-hover);
+}
+
+.alert {
+    padding: 15px;
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.alert-error {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.alert-success {
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Loading spinner */
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

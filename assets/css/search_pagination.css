@@ -1,0 +1,91 @@
+/* Search Bar */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: width 0.4s ease-in-out, padding 0.4s ease-in-out;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.search-input.active {
+    width: 200px;
+    padding: 5px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.search-btn:hover {
+    color: var(--primary-color);
+}
+
+/* Article Card Image (Lazy Loading) */
+.article-card-img-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    background: #f0f0f0;
+}
+
+.article-card-img-lazy {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover .article-card-img-lazy {
+    transform: scale(1.05);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.page-link {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.page-link:hover,
+.page-link.active {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.page-link.disabled {
+    color: #ccc;
+    pointer-events: none;
+    border-color: #eee;
+}
